@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern eCommerce Website</title>
+    <title>Aloe Trivandrum</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-vZt56pvDOvZh1z1oH2pDzZI9Z2eMz1HpVmOaC4oX7kfuwZB72nGDDQIbbONJuqz2vMlC4gQk51q2nqPN6GiMzA==" crossorigin="anonymous" />
     <style>
+    .product {
+        position: relative; /* Required for positioning the image */
+    }
+
+    .product img {
+        width: 100%; /* Make the image fill the container */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 8px; /* Adjust the border radius as needed */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    }
         @font-face {
             font-family: 'Scriptorama Tradeshow JF Regular';
             src: url('path/to/Scriptorama-Tradeshow-JF-Regular.woff') format('woff'); /* Update the path accordingly */
@@ -17,12 +27,12 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffeb3b; /* Yellow background color */
+            background-color: transparent; /* Transparent background */
             color: #333;
         }
 
         header {
-            background-color: #ff9800; /* Dark yellow header */
+            background-color: #FFC300;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -34,7 +44,7 @@
         }
 
         header img {
-            width: 50px; /* Adjust the size as needed */
+            width: 100px; /* Adjust the size as needed */
             height: auto; /* Maintain aspect ratio */
         }
 
@@ -46,7 +56,7 @@
         }
 
         .product {
-            border: 1px solid #ffb74d; /* Lighter border color */
+            border: 1px solid #ffd54f; /* Lighter border color */
             background-color: #fff;
             padding: 20px;
             margin: 10px;
@@ -206,7 +216,7 @@
 
 <header>
     <img src="your-logo.png" alt="Logo">
-    <h1>Modern eCommerce Website</h1>
+    <h1>Aloe Trivandrum</h1>
     <button id="cart-button" onclick="toggleCartOverlay()">
         <i class="fas fa-shopping-cart"></i>Show Cart
     </button>
@@ -215,20 +225,101 @@
 <main>
     <!-- Product 1 -->
     <div class="product">
-        <h2>Product 1</h2>
-        <p>₹2000.00</p>
-        <button onclick="addToCart('Product 1', 2000.00)">Add to Cart</button>
+        <img src="product1.png" alt="Aloe Lips Image">
+        <h2>Aloe Lips</h2>
+        <p>₹280.00</p>
+        <button onclick="addToCart('Aloe Lips', 280.00)">Add to Cart</button>
     </div>
 
     <!-- Product 2 -->
     <div class="product">
-        <h2>Product 2</h2>
-        <p>₹3000.00</p>
-        <button onclick="addToCart('Product 2', 3000.00)">Add to Cart</button>
+        <img src="product2.png" alt="Sanitizer Image">
+        <h2>Sanitizer</h2>
+        <p>₹343.00</p>
+        <button onclick="addToCart('Sanitizer', 343.00)">Add to Cart</button>
     </div>
 
-    <!-- Repeat the product divs as needed -->
+    <!-- Product 3 -->
+    <div class="product">
+        <img src="product3.png" alt="Aloe Turm Image">
+        <h2>Aloe Turm</h2>
+        <p>₹370.00</p>
+        <button onclick="addToCart('Aloe Turm', 370.00)">Add to Cart</button>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+        <img src="product4.png" alt="Soap Image">
+        <h2>Soap</h2>
+        <p>₹460.00</p>
+        <button onclick="addToCart('Soap', 460.00)">Add to Cart</button>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product">
+        <img src="product5.png" alt="Ever shield Image">
+        <h2>Ever shield</h2>
+        <p>₹666.00</p>
+        <button onclick="addToCart('Ever shield', 666.00)">Add to Cart</button>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product">
+        <img src="product6.png" alt="Toothpaste Image">
+        <h2>Toothpaste</h2>
+        <p>₹733.00</p>
+        <button onclick="addToCart('Toothpaste', 733.00)">Add to Cart</button>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="product">
+        <img src="product7.png" alt="Heat Lotion Image">
+        <h2>Heat Lotion</h2>
+        <p>₹1183.00</p>
+        <button onclick="addToCart('Heat Lotion', 1183.00)">Add to Cart</button>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="product">
+        <img src="product8.png" alt="Aloe vera Gelly Image">
+        <h2>Aloe vera Gelly</h2>
+        <p>₹1183.00</p>
+        <button onclick="addToCart('Aloe vera Gelly', 1183.00)">Add to Cart</button>
+    </div>
+
+    <!-- Product 9 -->
+    <div class="product">
+        <img src="product9.png" alt="Moisturizing Lotion Image">
+        <h2>Moisturizing Lotion</h2>
+        <p>₹1183.00</p>
+        <button onclick="addToCart('Moisturizing Lotion', 1183.00)">Add to Cart</button>
+    </div>
+
+    <!-- Product 10 -->
+    <div class="product">
+        <img src="product10.png" alt="Propolis Creme Image">
+        <h2>Propolis Creme</h2>
+        <p>₹1234.00</p>
+        <button onclick="addToCart('Propolis Creme', 1234.00)">Add to Cart</button>
+    </div>
+
+    <!-- Product 11 -->
+    <div class="product">
+        <img src="product11.png" alt="Aloe Scrub Image">
+        <h2>Aloe Scrub</h2>
+        <p>₹1259.00</p>
+        <button onclick="addToCart('Aloe Scrub', 1259.00)">Add to Cart</button>
+    </div>
+
+    <!-- Product 12 -->
+    <div class="product">
+        <img src="product12.png" alt="Honey Image">
+        <h2>Honey</h2>
+        <p>₹1650.00</p>
+        <button onclick="addToCart('Honey', 1650.00)">Add to Cart</button>
+    </div>
 </main>
+
 
 <!-- Cart Overlay -->
 <div id="cart-overlay">
